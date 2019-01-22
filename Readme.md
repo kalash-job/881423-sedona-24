@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Валерия Калашникова](https://up.htmlacademy.ru/htmlcss/24/user/881423).
-* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
+* Студент: [Nikolay]().
+
 
 ---
 
