@@ -23,7 +23,7 @@
     </header>
 
     <main class="container">
-        <h1 class="visuality-hidden">Sedona</h1>
+        <h1 class="visually-hidden">Sedona</h1>
         <div class="welcome-img"><img src="img/sedona.svg" width="459" height="353" alt="Welcome to the Gorgeous! Sedona. Because the Grand Canyon sucks"></div>
         <section class="main-features">
             <b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b>
@@ -33,7 +33,7 @@
                     <h3>Настоящий <br>городок</h3>
                     <b>— №1 —</b>
                     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                    <img src="img/photo1.jpg" alt="Фото Sedona">
+                    <img src="img/photo1.jpg" width="800" height="256" alt="Фото Sedona">
                     <ul>
                         <li class="main-features-sublist">
                             <h4>Жильё</h4>
@@ -41,22 +41,22 @@
                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
                         <li class="main-features-sublist">
-                                <h4>Еда</h4>
-                                <!--Здесь будет фоновая картинка - иконка.-->
-                                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            <h4>Еда</h4>
+                            <!--Здесь будет фоновая картинка - иконка.-->
+                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li class="main-features-sublist">
-                                <h4>Сувениры</h4>
-                                <!--Здесь будет фоновая картинка - иконка.-->
-                                <p>Не только китайского, но и местного производства!</p>
-                        </li>                        
+                            <h4>Сувениры</h4>
+                            <!--Здесь будет фоновая картинка - иконка.-->
+                            <p>Не только китайского, но и местного производства!</p>
+                        </li>
                     </ul>
                 </li>
                 <li class="main-features-list">
                     <h3>Там есть <br>Мост дьявола</h3>
                     <b>— №2 —</b>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                    <img src="img/photo2.jpg" alt="Фото Мост дьявола">
+                    <img src="img/photo2.jpg" width="800" height="256" alt="Фото Мост дьявола">
                 </li>
                 <li class="main-features-list">
                     <h3>Небольшая <br>площадь</h3>
@@ -77,30 +77,60 @@
 
         </section>
         <section main-booking>
-            <h2>Заинтересовались?</h2>
+            <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <img src="img/map.jpg" alt="Карта Sedona">
+            <img src="img/map.jpg" width="1200" height="593" alt="Карта Sedona">
+            <div class="main-booking-form">
+                <button type="button" class="button button-open-form">Поиск гостиницы в Седоне</button>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <p class="date-arrival">
+                        <label for="date-arrival">Дата заезда:</label>
+                        <input type="text" name="date-arrival" id="date-arrival" value="" placeholder="24 апреля 2017">
+                        <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты заезда"></button>
+                    </p>
+                    <p class="date-departure">
+                        <label for="date-departure">Дата выезда:</label>
+                        <input type="text" name="date-departure" id="date-departure" value="" placeholder="4 июля 2017">
+                        <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты выезда"></button>
+                    </p>
+                    <p class="booking-adults">
+                        <label for="booking-adults">Взрослые:</label>
+                        <input type="number" min="1" name="booking-adults" id="booking-adults" placeholder="2">
+                        <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих взрослых">-</button>
+                        <button type="button" class="button-plus" aria-label="Увеличить количество проживающих взрослых">+</button>
+                    </p>
+                    <p class="booking-kids">
+                        <label for="booking-kids">Дети:</label>
+                        <input type="number" min="0" name="booking-kids" id="booking-kids" placeholder="0">
+                        <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих детей">-</button>
+                        <button type="button" class="button-plus" aria-label="Увеличить количество проживающих детей">+</button>
+                    </p>
+                    <button class="button" type="submit">Найти</button>
 
-            <!--Здесь будет форма-->
-            
+                </form>
+
+            </div>
+
+
+
         </section>
 
     </main>
 
     <footer class="main-footer">
-        <a class="footer-link" title="посмотреть информацию по хештегу" href="#">#visitSEDONA</a>
+        <a class="footer-link" title="посмотреть информацию по хештегу" href="#" aria-label="посмотреть информацию по хештегу visitSEDONA">#visitSEDONA</a>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" title="Наш аккаунт в twitter" href="#">twitter</a></li>
-                <li><a class="social-button" title="Наша страница в facebook" href="#">Facebook</a></li>
-                <li><a class="social-button" title="Наш канал на YouTube" href="#">YouTube</a></li>
+                <li><a class="social-button" title="Наш аккаунт в twitter" href="#" aria-label="Наш аккаунт в twitter">twitter</a></li>
+                <li><a class="social-button" title="Наша страница в facebook" href="#" aria-label="Наша страница в facebook">Facebook</a></li>
+                <li><a class="social-button" title="Наш канал на YouTube" href="#" aria-label="Наш канал на YouTube">YouTube</a></li>
             </ul>
 
         </div>
         <p class="footer-copyright">
             <b>Website by</b>
             <a class="footer-img-link" title="Профессиональный HTML и CSS, уровень 1" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/htmlacademy.svg" alt="логотип htmlacademy">
+                <img src="img/htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
             </a>
         </p>
 
